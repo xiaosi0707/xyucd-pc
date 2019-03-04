@@ -254,9 +254,11 @@ a:hover {
       .contact-wrap .contact ul li img {
         margin-top: 111px; }
       .contact-wrap .contact ul li button {
+        border: 0;
         width: 194px;
         height: 42px;
-        background: #000;
+        background-color: rgba(0, 0, 0, 0);
+        /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
         border: 2px #ffffff solid;
         color: #eeeeee;
         margin-top: 21px; }
@@ -364,5 +366,32 @@ a:hover {
       font-size: 16px; }
       .page section a:last-child {
         border-left: 1px #E6E6E6 solid; }
+
+/**
+@Author：Wyunfei
+@Date：2019/3/4/18:43
+@FileName: 404
+*/
+.no-found {
+  width: 100%;
+  margin: 96px 0 120px;
+  text-align: center;
+  line-height: 24px;
+  overflow: hidden; }
+  .no-found img {
+    margin-bottom: 42px; }
+  .no-found span, .no-found a {
+    display: inline-block;
+    font-size: 16px;
+    color: #0e4486; }
+  .no-found a {
+    width: 157px;
+    height: 48px;
+    line-height: 48px;
+    background: #1cc8cf;
+    color: white;
+    border-radius: 24px;
+    margin-top: 42px;
+    text-decoration: none; }
 
 /*# sourceMappingURL=app.css.map */

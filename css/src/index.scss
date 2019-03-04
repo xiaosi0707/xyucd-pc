@@ -279,9 +279,10 @@
           margin-top: 111px;
         }
         button {
+          border: 0;
           width: 194px;
           height: 42px;
-          background: #000;
+          background-color:rgba(0,0,0,0); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
           border: 2px #ffffff solid ;
           color: #eeeeee;
           margin-top: 21px;
